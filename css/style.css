@@ -1,0 +1,72 @@
+/* variable */
+:root {
+    --short-height: 6.25rem;
+    --mini-length: 12.5rem;
+}
+
+body {
+    margin: 0;
+}
+
+#wrap {
+    width: 75rem;
+    background-color: antiquewhite;
+    margin: 0 auto;
+}
+
+/* Flex layout */
+/* Flex header */
+.header {
+    display: flex;
+}
+
+.header .header_rogo {
+    width: var(--mini-length);
+    height: var(--short-height);
+    background-color: #d5ff72;
+}
+
+.header .header_nav {
+    width: 62.5rem;
+    height: var(--short-height);
+    background-color: #c3ed60;
+}
+
+/* Flex contents */
+.contents {
+    height: 31.25rem;
+    background-color: #b1db4e;
+}
+
+.contents .contents_slide {
+    height: 18.75rem;
+    background-color: #b1db4e;
+}
+
+.contents .contents_containar {
+    height: var(--mini-length);
+    background-color: #9fc93c;
+}
+
+/* Flex footer */
+.footer {
+    display: flex;
+}
+
+.footer .footer_rogo {
+    width: var(--mini-length);
+    height: var(--short-height);
+    background-color: #8db72a;
+}
+
+.footer .footer_info {
+    width: 50rem;
+    height: var(--short-height);
+    background-color: #7ba518;
+}
+
+.footer .footer_sns {
+    width: var(--mini-length);
+    height: var(--short-height);
+    background-color: #699306;
+}
