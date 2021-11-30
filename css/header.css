@@ -1,0 +1,44 @@
+/* Flex header */
+.header {
+    display: flex;
+}
+
+/* header_rogo */
+.header .header_rogo {
+    width: var(--mini-length);
+    height: var(--short-height);
+    background-color: #d5ff72;
+}
+
+.header .header_rogo h1 {
+    text-align: center;
+}
+
+/* header_nav */
+.header .header_nav {
+    width: 62.5rem;
+    height: var(--short-height);
+    background-color: #c3ed60;
+    position: relative;
+}
+
+.header .header_nav .header_nav-menu {
+    display: flex;
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+}
+
+.header .header_nav .header_nav-menu > li {
+    text-align: center;
+    vertical-align: middle;
+    width: 6rem;
+    padding: 0.25rem;
+}
+
+.header .header_nav .header_nav-menu > li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* 메뉴 크기 다시 확정 짓기. */
