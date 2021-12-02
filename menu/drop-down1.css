@@ -1,0 +1,54 @@
+/* reset */
+* {
+    margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+/* header */
+#main_wrap {
+}
+
+#main_wrap .header {
+    display: flex;
+}
+
+#main_wrap .header .rogo {
+    background-color: #b5b2ff;
+    width: 20vw;
+    height: 12.5rem;
+}
+
+#main_wrap .header .rogo h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+#main_wrap .header .header_nav {
+    background-color: #b2ccff;
+    width: 80vw;
+    height: 12.5rem;
+}
+
+/* menu */
+#menu {
+}
+
+#menu .main_menu {
+}
+
+#menu .main_menu li {
+}
+
+#menu .main_menu .sub_menu {
+}
+
+#menu .main_menu .sub_menu li {
+}
