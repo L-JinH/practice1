@@ -35,19 +35,42 @@ a {
     background-color: #b2ccff;
     width: 80vw;
     height: 12.5rem;
+    position: relative;
 }
 
 /* menu */
 #menu {
+    font-weight: 600;
+    background-color: gray;
+    text-align: center;
+    width: 43.75rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    position: absolute;
+    top: 9.375rem;
+    left: 33.05rem;
+}
+
+#menu ul {
+    padding: 0;
 }
 
 #menu .main_menu {
+    display: flex;
 }
 
 #menu .main_menu li {
+    width: 8.75rem;
 }
 
 #menu .main_menu .sub_menu {
+    width: 8.75rem;
+    background-color: #d5d5d5;
+    display: none;
+}
+
+#menu .main_menu li:hover .sub_menu {
+    display: block;
 }
 
 #menu .main_menu .sub_menu li {
