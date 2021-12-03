@@ -60,18 +60,41 @@ a {
 }
 
 #menu .main_menu li {
+    height: 3.125rem;
     width: 8.75rem;
+}
+
+#menu .main_menu li:hover {
+    background-color: burlywood;
 }
 
 #menu .main_menu .sub_menu {
     width: 8.75rem;
     background-color: #d5d5d5;
-    display: none;
+    /* display: none; : transition이 안먹음 */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
 }
+
+/* #menu .main_menu li .sub_menu {
+    transition: display 1s ease-in-out;
+} */
 
 #menu .main_menu li:hover .sub_menu {
-    display: block;
+    transform: translateY(0rem);
+    opacity: 1;
+    visibility: visible;
 }
 
-#menu .main_menu .sub_menu li {
+#menu .main_menu .sub_menu li:hover {
+    background-color: aquamarine;
 }
+
+/* @keyframes dropDown {
+    0% {
+
+    }
+} */
+
+/* 애니메이션 이용해보기. */
