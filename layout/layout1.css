@@ -1,0 +1,116 @@
+/* variable */
+/* linear-content: w1200px */
+:root {
+    --header-footer-h: 6.25rem;
+    --rogo-sns-w: 12.5rem;
+    --contents_w: 25rem;
+    --contents_h: 12.5rem;
+}
+
+/* color:w1200px */
+:root {
+    --rogo-sns-color: #b2ccff;
+    --contents-1st-last-color: #4374d9;
+    --contents-2nt-color: #3162c7;
+}
+
+/* layout */
+body {
+    margin: 0;
+}
+
+#wrap {
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    display: flex;
+}
+
+.header .header_rogo {
+    background-color: var(--rogo-sns-color);
+    height: var(--header-footer-h);
+    width: var(--rogo-sns-w);
+}
+
+/* header - nav */
+.header .header_nav {
+    height: var(--header-footer-h);
+    width: 62.5rem;
+    background-color: #6799ff;
+}
+
+/* header in nav - main-menu */
+.header_nav .nav_main-menu {
+    display: none;
+}
+
+.nav_main-menu li {
+}
+
+/* header in nav - sub-menu */
+.nav_main-menu .nav_sub-menu {
+}
+
+.nav_main-menu .nav_sub-menu li {
+}
+
+/* contents */
+#main {
+}
+
+/* main - image-slide */
+.main_slide {
+    width: 75rem;
+    height: 18.75rem;
+    background-color: #d3ffff;
+}
+
+/* main - contents */
+.main_contents {
+    display: flex;
+}
+
+.main_contents section:first-child {
+    background-color: var(--contents-1st-last-color);
+    width: var(--contents_w);
+    height: var(--contents_h);
+}
+
+.main_contents section:nth-child(2) {
+    background-color: var(--contents-2nt-color);
+    width: var(--contents_w);
+    height: var(--contents_h);
+}
+
+.main_contents section:last-child {
+    background-color: var(--contents-1st-last-color);
+    width: var(--contents_w);
+    height: var(--contents_h);
+}
+
+/* footer */
+.footer {
+    display: flex;
+}
+
+.footer .footer_rogo {
+    background-color: var(--rogo-sns-color);
+    height: var(--header-footer-h);
+    width: var(--rogo-sns-w);
+}
+
+.footer .footer_copy {
+    background-color: #002266;
+    height: var(--header-footer-h);
+    width: 50rem;
+}
+
+.footer .footer_sns {
+    background-color: var(--rogo-sns-color);
+    height: var(--header-footer-h);
+    width: var(--rogo-sns-w);
+}
+
+/* 배경도 grid를 이용해서 같이 잡기. */
