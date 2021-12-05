@@ -20,6 +20,8 @@ body {
 }
 
 #wrap {
+    width: 75rem;
+    height: 43.75rem;
     margin: 0 auto;
 }
 
@@ -43,7 +45,9 @@ body {
 
 /* header in nav - main-menu */
 .header_nav .nav_main-menu {
-    display: none;
+    background-color: antiquewhite;
+    width: 37.5rem;
+    height: 2.1875rem;
 }
 
 .nav_main-menu li {
@@ -112,5 +116,3 @@ body {
     height: var(--header-footer-h);
     width: var(--rogo-sns-w);
 }
-
-/* 배경도 grid를 이용해서 같이 잡기. */
