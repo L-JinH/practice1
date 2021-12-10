@@ -1,4 +1,3 @@
 "use strict";
-
-//토글, 타겟 사용
-// 토글을 이용해서 메뉴 나오게 하고 타겟을 이용해서 다른 곳을 클릭하면 메뉴가 닫히게 하기.
+// 버튼 가져오기.
+const items = document.querySelectorAll(".question");

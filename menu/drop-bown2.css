@@ -1,0 +1,36 @@
+/* 따라하기. */
+/* 타이틀 */
+#faq-title {
+    font-size: 1.875rem; /* = 30px */
+}
+
+/* 메뉴 컨텐츠 */
+.faq-content {
+    border-bottom: 1px solid #e0e0e0;
+} /* 밑줄 */
+
+/* 질문란 전체 */
+.faq-content .question {
+    font-size: 1.1875rem; /* = 19px */
+    padding: 30px 0;
+    cursor: pointer;
+    border: none;
+    /* outline: none; */
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+
+.faq-content .question:hover {
+    color: #2962ff;
+}
+
+/* '+' 표시 */
+.faq-content .question [id$="-toggle"] {
+    margin-right: 15px;
+}
+
+.faq-content .answer {
+    display: none;
+    padding-bottom: 30px;
+}
