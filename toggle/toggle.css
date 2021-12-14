@@ -1,3 +1,4 @@
+/* background-color */
 .div_box {
     background-color: lightcoral;
     width: 10rem;
@@ -27,6 +28,7 @@
     font-size: 1rem;
 }
 
+/* border-radius */
 .div_h {
     width: 10rem;
     height: 10rem;
@@ -52,4 +54,39 @@
 
 .toggle_h {
     border-radius: 50%;
+}
+
+/* transition */
+.trans_div {
+    width: 20rem;
+    height: 5rem;
+    background-color: aquamarine;
+    margin-top: 1rem;
+    transition: all 1s ease-in-out;
+}
+
+.trans_hover {
+    background-color: coral;
+    transform: scaleX(0.2);
+    transition: all 1s ease-in-out;
+}
+
+.trans_btn {
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 6rem;
+    height: 3rem;
+    margin-top: 1rem;
+    background-color: burlywood;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.trans_btn:hover {
+    color: skyblue;
+    background-color: rgb(140, 126, 228);
+    transform: perspective(5rem) translateZ(1rem);
 }

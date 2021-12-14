@@ -1,4 +1,6 @@
 "use strict";
+
+// background-color
 const toggleBtn = document.querySelector(".div_color");
 const divBox = document.querySelector(".div_box");
 
@@ -8,6 +10,7 @@ function colorBtn() {
 
 toggleBtn.addEventListener("click", colorBtn);
 
+// border-radius
 const hBtn = document.querySelector(".h_btn");
 const hBox = document.querySelector(".div_h");
 
@@ -17,3 +20,13 @@ function heightClick() {
 
 hBtn.addEventListener("click", heightClick);
 //addEventListener에 function이름 앞에 () 붙이지 말기.
+
+// transition
+const transDiv = document.querySelector(".trans_div");
+const transBtn = document.querySelector(".trans_btn");
+
+function transClick() {
+    transDiv.classList.toggle("trans_hover");
+}
+
+transBtn.addEventListener("click", transClick);
