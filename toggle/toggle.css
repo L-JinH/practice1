@@ -92,3 +92,109 @@
 }
 
 /* menu */
+#main_menu {
+}
+
+.main {
+    width: 24rem;
+    height: 2rem;
+    background-color: antiquewhite;
+    display: flex;
+    margin: 2rem 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.main > li {
+    width: 6rem;
+    list-style: none;
+    /* padding: 0 1rem; */
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.main > li:hover {
+    animation: hoverAni 2.5s infinite;
+    transition: all;
+}
+
+@keyframes hoverAni {
+    0% {
+        background-color: #4ac29a;
+    }
+
+    50% {
+        background-color: #bdfff3;
+    }
+
+    100% {
+        background-color: #4ac29a;
+    }
+}
+
+.main > li > a {
+    text-decoration: none;
+    color: cadetblue;
+    vertical-align: middle;
+    transition: all 1s ease-in-out;
+}
+
+.main > li:hover > a {
+    color: rgb(173, 138, 255);
+}
+
+.sub {
+    /* width: 24rem; */
+    padding: 0;
+}
+/* .main > li 클릭하면 애니메이션 적용 */
+
+.sub li {
+    width: 6rem;
+    height: 2rem;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    background-color: rgb(213, 250, 192);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub > li:hover {
+    background-color: thistle;
+}
+
+.sub li a {
+    text-decoration: none;
+    color: cadetblue;
+    vertical-align: middle;
+}
+
+.show {
+    animation: subMenu 1s infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes subMenu {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        height: 2rem;
+    }
+    40% {
+        opacity: 1;
+        visibility: visible;
+        height: 4rem;
+    }
+    80% {
+        opacity: 1;
+        visibility: visible;
+        height: 6rem;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        height: 8rem;
+    }
+}
