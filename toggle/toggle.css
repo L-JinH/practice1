@@ -91,110 +91,83 @@
     transform: perspective(5rem) translateZ(1rem);
 }
 
-/* menu */
+/* kayframe */
 #main_menu {
-}
-
-.main {
-    width: 24rem;
-    height: 2rem;
-    background-color: antiquewhite;
+    margin-top: 3rem;
     display: flex;
-    margin: 2rem 0;
-    padding: 0;
-    /* display: flex;
-    justify-content: space-around; */
 }
 
-.main > li {
-    width: 6rem;
-    list-style: none;
-    /* padding: 0 1rem; */
-    text-align: center;
+#main_menu button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    border-bottom: 1px solid red;
     transition: all 1s ease-in-out;
 }
 
-.main > li:hover {
-    animation: hoverAni 2.5s infinite;
-    transition: all;
+#main_menu button:hover {
+    border-bottom: 1px solid cyan;
 }
 
-@keyframes hoverAni {
-    0% {
-        background-color: #4ac29a;
-    }
-
-    50% {
-        background-color: #bdfff3;
-    }
-
-    100% {
-        background-color: #4ac29a;
-    }
+#main_menu ul,
+li {
+    list-style: none;
+    padding: 0;
 }
 
-.main > li > a {
+#main_menu a {
     text-decoration: none;
-    color: cadetblue;
-    vertical-align: middle;
+    color: black;
+}
+
+.btnList {
+    padding: 0 2rem;
+}
+
+.btnList > .main_btn {
+    font-weight: 600;
+    color: cornflowerblue;
     transition: all 1s ease-in-out;
 }
 
-.main > li:hover > a {
-    color: rgb(173, 138, 255);
+.btnList > .main_btn:hover {
+    color: cyan;
 }
 
-.sub {
-    /* width: 24rem; */
-    padding: 0;
+.sub_list {
+    border: 1px solid red;
 }
-/* .main > li 클릭하면 애니메이션 적용 */
 
-.sub li {
-    width: 6rem;
-    height: 2rem;
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    background-color: rgb(213, 250, 192);
+.hidden {
     opacity: 0;
     visibility: hidden;
 }
 
-.sub > li:hover {
-    background-color: thistle;
-}
-
-.sub li a {
-    text-decoration: none;
-    color: cadetblue;
-    vertical-align: middle;
+.sub_list > li {
+    width: 3rem;
+    height: 1.5rem;
 }
 
 .show {
-    animation: subMenu 1s infinite;
-    transition: all 1s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    /* animation: showList 1s ease-in-out; */
 }
 
-@keyframes subMenu {
+@keyframes showList {
     0% {
-        opacity: 1;
-        visibility: visible;
-        height: 2rem;
+        height: 1.5rem;
     }
-    40% {
-        opacity: 1;
-        visibility: visible;
-        height: 4rem;
+
+    30% {
+        height: 3rem;
     }
-    80% {
-        opacity: 1;
-        visibility: visible;
-        height: 6rem;
+
+    60% {
+        height: 4.5rem;
     }
+
     100% {
-        opacity: 1;
-        visibility: visible;
-        height: 8rem;
+        height: 6rem;
     }
 }

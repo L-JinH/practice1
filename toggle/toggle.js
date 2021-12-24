@@ -30,3 +30,13 @@ function transClick() {
 }
 
 transBtn.addEventListener("click", transClick);
+
+// keyframe
+const ListBtn = document.querySelector(".main_btn");
+const ListSub = document.querySelectorAll(".sub_list");
+
+function ListClick() {
+    document.querySelector(".hidden").classList = "show";
+}
+
+ListBtn.addEventListener("click", ListClick);
