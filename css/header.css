@@ -1,59 +1,91 @@
-/* Flex header */
-.header {
+/* header */
+#header {
     display: flex;
 }
 
 /* header_rogo */
-.header .header_rogo {
-    width: var(--mini-length);
-    height: var(--short-height);
-    background-color: #d5ff72;
-}
-
-.header .header_rogo h1 {
+#header .header_rogo {
+    width: 12.5rem;
+    height: 6.25rem;
+    background-color: #d9e5ff;
     text-align: center;
+    line-height: 6.25rem;
 }
 
-/* header_nav */
-.header .header_nav {
-    width: 62.5rem;
-    height: var(--short-height);
-    background-color: #c3ed60;
-    position: relative;
-}
+/* 
+vertical-align: ;은 inline요소에서 적용. 
+text의 경우 line-height를 감싸고 있는 상자 높이를 적용하면 중앙으로 간다. 
+*/
 
-.header .header_nav .header_nav-menu {
-    display: flex;
-    position: absolute;
-    top: 3.4rem;
-    right: 0;
-}
-
-.header .header_nav .header_nav-menu > li {
-    text-align: center;
-    vertical-align: middle;
-    width: 6rem;
-    padding: 0.25rem;
-    position: relative;
-}
-
-/* memu w 24rem */
-
-.header .header_nav .header_nav-menu > li:hover {
-    background-color: #faed7d;
-}
-
-/* header_sub-menu */
-.header_nav-menu .header_sub-menu {
-    position: absolute;
-    left: 0;
+/* headr_nav */
+#header ul {
+    /* reset */
+    list-style: none;
     padding: 0;
-    background-color: #9fc93c;
+    margin: 0;
+
+    font-weight: 600;
 }
 
-.header_nav-menu .header_sub-menu > li {
-    width: 6rem;
-    padding: 0.25rem;
+#header li {
+    width: 9.375rem;
+    height: 2.1875rem;
 }
 
-/* 하이라이트 문제 해결하기. */
+#header a {
+    text-decoration: none;
+    color: grey;
+}
+
+#header .header_nav {
+    width: 62.5rem;
+    height: 6.25rem;
+    background-color: #dad9ff;
+    /* header_nav-menu 중심점 */
+    position: relative;
+}
+
+/* headr_nav-menu */
+#header .header_nav .header_nav-menu {
+    /* layout */
+    display: flex;
+    /* 정렬 */
+    text-align: center;
+    line-height: 2.1875rem;
+    position: absolute;
+    top: 65px;
+    left: 400px;
+    /* 크기 */
+    width: 37.5rem;
+    height: 2.1875rem;
+    /* 임시 */
+    background-color: skyblue;
+}
+
+.header_nav .header_nav-menu li {
+    /* width: 9.375rem;
+    height: 2.1875rem; */
+}
+
+.header_nav > .header_nav-menu > li:hover {
+    background-color: lemonchiffon;
+}
+
+.header_nav .header_nav-menu a {
+    /* text-decoration: none; */
+}
+
+/* headr_nav-menu-sub */
+.header_nav .header_nav-menu .header_nav-menu-sub {
+    background-color: honeydew;
+    display: none;
+}
+
+.header_nav-menu-sub > li:hover {
+    background-color: lightblue;
+}
+
+/* 펼치기 */
+.header_nav-menu :hover .header_nav-menu-sub {
+    display: block;
+}

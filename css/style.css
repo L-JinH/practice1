@@ -5,68 +5,64 @@
 4. >480 px = >30rem
 */
 
-/* reset */
-ul {
-    list-style: none;
-}
+/* ! only CSS ! */
 
-a {
-    text-decoration: none;
-}
-
-/* variable */
-:root {
-    --short-height: 6.25rem;
-    --mini-length: 12.5rem;
-}
-
+/* body */
 body {
     margin: 0;
 }
 
 #wrap {
     width: 75rem;
-    background-color: antiquewhite;
     margin: 0 auto;
 }
+/* 
+! 실수 !
+margin: 0 auto로 가운데 정렬을 하기 위해서는 width 값이 꼭 필요함.
+*/
 
-/* Flex layout */
-
-/* Flex contents */
-.contents {
+/* main */
+#main {
+    width: 75rem;
     height: 31.25rem;
-    background-color: #b1db4e;
+    background-color: #b2ccff;
 }
 
-.contents .contents_slide {
+/* 이미지 슬라이드 */
+#main .main_slide {
+    width: 75rem;
     height: 18.75rem;
-    background-color: #b1db4e;
+    background-color: #b5b2ff;
 }
 
-.contents .contents_containar {
-    height: var(--mini-length);
-    background-color: #9fc93c;
-}
-
-/* Flex footer */
-.footer {
+/* contents */
+#main .main_container {
+    width: 75rem;
+    height: 12.5rem;
+    background-color: #d1b2ff;
     display: flex;
 }
 
-.footer .footer_rogo {
-    width: var(--mini-length);
-    height: var(--short-height);
-    background-color: #8db72a;
+.main_container .main_container-content {
+    width: 25rem;
+    height: 12.5rem;
 }
 
-.footer .footer_info {
-    width: 50rem;
-    height: var(--short-height);
-    background-color: #7ba518;
+.main_container .main_container-content:first-child {
+    background-color: #b2ccff;
 }
 
-.footer .footer_sns {
-    width: var(--mini-length);
-    height: var(--short-height);
-    background-color: #699306;
+.main_container .main_container-content:nth-child(2) {
+    background-color: #d1b2ff;
+}
+
+.main_container .main_container-content:last-child {
+    background-color: #b2ccff;
+}
+
+/* footer */
+#footer {
+    width: 75rem;
+    height: 6.25rem;
+    background-color: #6799ff;
 }
