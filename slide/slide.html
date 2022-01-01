@@ -11,10 +11,38 @@
         <!-- input type="radio" name="slide"/for을 이용해서 연결 -->
         <!-- 1. 버튼 누르는 슬라이드  2. 애니메이션 효과 슬라이드 -->
         <div class="section">
+            <!-- input 영역 -->
             <input type="radio" name="slide" id="slide1" checked />
             <!-- 첫번째 input을 선택할 수 있게 cheked 속성을 줌. -->
             <input type="radio" name="slide" id="slide2" />
             <input type="radio" name="slide" id="slide3" />
+
+            <!-- slide 영역 -->
+            <div class="slidewrap">
+                <ul class="slidelist">
+                    <li>
+                        <a href="#">
+                            <ladel for="slide3" class="left"></ladel>
+                            <img src="lmage/slide1.jpg" alt="" />
+                            <ladel for="slide2" class="right"></ladel>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ladel for="slide1" class="left"></ladel>
+                            <img src="lmage/slide2.jpg" alt="" />
+                            <ladel for="slide3" class="right"></ladel>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ladel for="slide2" class="left"></ladel>
+                            <img src="lmage/slide3.jpg" alt="" />
+                            <ladel for="slide1" class="right"></ladel>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
